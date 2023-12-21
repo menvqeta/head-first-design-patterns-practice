@@ -9,4 +9,9 @@ public class MallardDuck extends Duck {
     public void display() {
         logger.info("Looks like a {}", MallardDuck.class.getCanonicalName());
     }
+
+    public MallardDuck() {
+        quackBehaviour = new Quack();
+        flyBehaviour = new FlyWithWings();
+    }
 }
